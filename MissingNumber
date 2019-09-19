@@ -62,6 +62,13 @@ int main(){
   quickSort(arr, 0, n - 1);
   cout << "Sorted array: \n";
   printArray(arr, n);
-  return 0;
-
+  if((arr[i-1]%2)==0){
+    respuesta=arr[i-1]+2;
+    cout<<respuesta<<endl;
   }
+  else{
+  respuesta=arr[i-1]+1;
+  cout<<respuesta<<endl;
+  }
+  return 0;
+ }
